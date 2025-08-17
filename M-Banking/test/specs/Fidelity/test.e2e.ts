@@ -1,8 +1,8 @@
 require('dotenv').config();
-if (!process.env.USERNAME || !process.env.PASSWORD) {
+if (!process.env.USERNAMEFID || !process.env.PASSWORD) {
   throw new Error("USERNAME or PASSWORD is not defined in .env");
 }
-const UsernameENV: string = process.env.USERNAME;
+const UsernameENV: string = process.env.USERNAMEFID;
 const PasswordENV: string = process.env.PASSWORD;
 
 describe('Tap test', () => {
